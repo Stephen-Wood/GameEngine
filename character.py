@@ -180,8 +180,8 @@ class Character(object):
         return choice
 
 if __name__ == "__main__":
-    hero = Character(name = "Mr. Peebles")
-    orc = Character(name = "Magilla")
+    hero = Character(name = "Mr. Meeseeks")
+    orc = Character(name = "Haroomba")
     print(hero.potionCount)
     print(hero.potionList)
     hero.heal()

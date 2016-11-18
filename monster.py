@@ -51,7 +51,7 @@ class Orc(Monster):
     ''' generic Orc class '''
     def __init__(self,
                  name = "Dorque da Orc",
-                 maxHealth = 100,
+                 maxHealth = 10,
                  speed = 25,
                  stamina = 25,
                  strength = 8,
@@ -66,6 +66,49 @@ class Orc(Monster):
                                   intelligence, dexterity, numberOfPotions,
                                   inventory, aggression, awareness, fear)
 
+def Slime(Monster):
+    """ generic wimpy class
+        this class"""
+    def __init__(self,
+                 name = "Slimey McSlimeface",
+                 maxHealth = 6,
+                 speed = 15,
+                 stamina = 25,
+                 strength = 5,
+                 intelligence = 4,
+                 dexterity = 2,
+                 numberOfPotions = 2,
+                 inventory = [],
+                 aggression = 60,
+                 awareness = 15,
+                 fear = 100):
+        super(Slime, self).__init__(name, maxHealth, speed, stamina, strength,
+                                   intelligence, dexterity, numberOfPotions,
+                                   inventory, aggression, awareness, fear)
+
+def Mir(Monster):
+    """ generic Boss class
+
+        this class is the boss class"""
+    def __init__(self,
+                 name = "Hackerman",
+                 maxHealth = 16,
+                 speed = 30,
+                 stamina = 25,
+                 strength = 7,
+                 intelligence = 15,
+                 dexterity = 10,
+                 numberOfPotions = 2,
+                 inventory = [],
+                 aggression = 150,
+                 awareness = 120,
+                 fear = 50):
+        super(Hackerman, self).__init__(name, maxHealth, speed, stamina, strength,
+                                   intelligence, dexterity, numberOfPotions,
+                                   inventory, aggression, awareness, fear)   
+              
+
+def 
 
 def random_monster():
     '''generate a monster at random
@@ -76,8 +119,9 @@ def random_monster():
     
     monster = Monster()
     orc = Orc()
-    
-    listOfMonsters = [monster, orc]
+    slime = Slime()
+              
+    listOfMonsters = [monster, orc, slime]
     return choice(listOfMonsters)
 
 
