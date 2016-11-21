@@ -73,7 +73,7 @@ def Slime(Monster):
                  name = "Slimey McSlimeface",
                  maxHealth = 6,
                  speed = 15,
-                 stamina = 25,
+                 stamina = 15,
                  strength = 5,
                  intelligence = 4,
                  dexterity = 2,
@@ -91,24 +91,41 @@ def Mir(Monster):
 
         this class is the boss class"""
     def __init__(self,
-                 name = "Hackerman",
-                 maxHealth = 16,
-                 speed = 30,
+                 name = "Mir",
+                 maxHealth = 25,
+                 speed = 35,
                  stamina = 25,
-                 strength = 7,
-                 intelligence = 15,
-                 dexterity = 10,
+                 strength = 16,
+                 intelligence = 10,
+                 dexterity = 12,
                  numberOfPotions = 2,
                  inventory = [],
-                 aggression = 150,
+                 aggression = 110,
                  awareness = 120,
-                 fear = 50):
-        super(Hackerman, self).__init__(name, maxHealth, speed, stamina, strength,
-                                   intelligence, dexterity, numberOfPotions,
-                                   inventory, aggression, awareness, fear)   
+                 fear = 60):
+        super(Mir, self).__init__(name, maxHealth, speed, stamina, strength,
+                                     intelligence, dexterity, numberOfPotions,
+                                     inventory, aggression, awareness, fear)   
               
 
-def 
+class Shoggoth(Monster):
+    """ generic Unbeatable class"""
+    def __init__(self,
+                 name = "Shoggoth",
+                 maxHealth = 40,
+                 speed = 10,
+                 stamina = 25,
+                 strength = 20,
+                 intelligence = 15,
+                 dexterity = 6,
+                 numberOfPotions = 2,
+                 inventory = [],
+                 aggression = 140,
+                 awareness = 50,
+                 fear = -2000):
+        super(Shoggoth, self).__init__(name, maxHealth, speed, stamina, strength,
+                                   intelligence, dexterity, numberOfPotions,
+                                   inventory, aggression, awareness, fear)    
 
 def random_monster():
     '''generate a monster at random
